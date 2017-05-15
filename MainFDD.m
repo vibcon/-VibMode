@@ -1,4 +1,6 @@
 clear 
 clc
 load('TestModel.mat');
-FDD(test.MeasurementData(1,2),5)
+ [Frq,Mode,DampingRatio] = MeasurementFDD(test.MeasurementData(1,1),5);
+%[Frq,Mode,DampingRatio,EFrq] = MeasurementFDD(test.MeasurementData(1,1),5);
+%[Frq,Mode,DampingRatio,EFrq] = MeasurementFDD(test.MeasurementData(1,1),5,blackman(1000));

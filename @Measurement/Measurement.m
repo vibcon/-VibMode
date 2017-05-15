@@ -31,6 +31,7 @@ classdef Measurement < handle
             disp(obj.Description)
         end
     end
+end
 
     
     
